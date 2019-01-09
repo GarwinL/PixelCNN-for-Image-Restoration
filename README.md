@@ -13,24 +13,24 @@ python PixelCNNpp/train.py
 ```
 
 ## Image Restoration (IR)
-A trained network is provided in `Net/` to execute image restoration.
-###Denoising:
+A trained network is provided in `Net/` to execute image restoration.__
+Denoising:__
 ```
 python Denoising/optimizer.py
 ```
 
-###Inpainting:
+Inpainting:__
 ```
 python Inpainting/optimizer.py
 ```
 
-###SISR:
+SISR:__
 ```
 python SISR/optimizer.py
 ```
 
 Additional files are available to train hyperparameters, perform IR evaluations or do patch denoising.
 
-### Dependencies
-PixelCNNpp implementation based on ["A pytorch Implementation of PixelCNN++"](https://github.com/pclucas14/pixel-cnn-pp)
-Dataloader package was kindly provided by [Tobias Plötz](https://www.visinf.tu-darmstadt.de/team_members/tploetz/tploetz.en.jsp) (we modified the original package)
+## Dependencies
+- PixelCNNpp implementation based on ["A pytorch Implementation of PixelCNN++"](https://github.com/pclucas14/pixel-cnn-pp)
+- Dataloader package was kindly provided by [Tobias Plötz](https://www.visinf.tu-darmstadt.de/team_members/tploetz/tploetz.en.jsp) (we modified the original package)
