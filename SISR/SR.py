@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import sys
+# Add sys path
+sys.path.append('../')
 
 from torchvision.utils import make_grid
 from SISR.posterior import logposterior 

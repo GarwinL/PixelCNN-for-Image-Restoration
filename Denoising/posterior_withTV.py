@@ -11,6 +11,10 @@ Created on Fri Jul 27 15:24:54 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
+
 import torch
 from Denoising.utils import nl_logistic_mixture_continous_test
 

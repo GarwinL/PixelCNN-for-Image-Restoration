@@ -6,7 +6,7 @@ Created on Fri Jul 27 15:24:54 2018
 """
 
 import torch
-from utils import log_logistic_mixture, log_prob_from_logits, log_logistic_mixture_continous
+from PixelCNNpp.utils import log_logistic_mixture, log_prob_from_logits, log_logistic_mixture_continous
 import torch.nn.functional as F
 
 #Device for computation (CPU or GPU)

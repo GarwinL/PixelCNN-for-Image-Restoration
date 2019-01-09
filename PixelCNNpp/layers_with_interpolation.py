@@ -1,3 +1,7 @@
+import sys
+# Add sys path
+sys.path.append('../')
+
 from PixelCNNpp.utils import concat_elu, down_shift, right_shift
 import torch 
 import torch.nn as nn

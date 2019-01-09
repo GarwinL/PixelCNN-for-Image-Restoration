@@ -4,6 +4,9 @@ Created on Wed Aug  1 15:02:08 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
 
 import time
 import numpy as np

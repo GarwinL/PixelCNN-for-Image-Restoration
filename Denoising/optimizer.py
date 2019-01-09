@@ -4,6 +4,10 @@ Created on Fri Jul 27 15:43:48 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
+
 import torch
 from Dataloader.dataloader import get_loader_cifar, get_loader_bsds, get_loader_denoising
 from PixelCNNpp.network import PixelCNN
@@ -45,17 +49,17 @@ if __name__ == '__main__':
     config = BaseConfig().initialize()
     
     # Load datasetloader
-    #test_loader = get_loader_cifar('../../../datasets/CIFAR10', 1, train=False, num_workers=0);
-    #test_loader = get_loader_bsds('../../../datasets/BSDS/pixelcnn_data/train', 1, train=False, crop_size=[32,32]);
-    test_loader = get_loader_denoising('../../../datasets/Parameterevaluation', 1, train=False, num_workers=0, crop_size=[config.crop_size,config.crop_size])
+    #test_loader = get_loader_cifar('../../datasets/CIFAR10', 1, train=False, num_workers=0);
+    #test_loader = get_loader_bsds('../../datasets/BSDS/pixelcnn_data/train', 1, train=False, crop_size=[32,32]);
+    test_loader = get_loader_denoising('../../datasets/Parameterevaluation', 1, train=False, num_workers=0, crop_size=[config.crop_size,config.crop_size])
     
     # Iterate through dataset
     data_iter = iter(test_loader);
     for i in range(3):
         image, label = next(data_iter);
     
-    mat_eng = matlab.engine.start_matlab()
-    mat_eng.cd(r'C:\Users\garwi\Desktop\Uni\Master\3_Semester\Masterthesis\Implementation\MRF\restoration')
+    #mat_eng = matlab.engine.start_matlab()
+    #mat_eng.cd(r'C:\Users\garwi\Desktop\Uni\Master\3_Semester\Masterthesis\Implementation\MRF\restoration')
     
     #Device for computation (CPU or GPU)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -68,7 +72,7 @@ if __name__ == '__main__':
 #            input_channels=1, nr_logistic_mix=10);
     
     # continous - discrete - continous_new
-    net.load_state_dict(torch.load('../../Net/' + config.net_name))
+    net.load_state_dict(torch.load('../Net/' + config.net_name))
  
     net.to(device)
 

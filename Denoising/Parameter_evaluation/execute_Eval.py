@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+import sys
+# Add sys path
+sys.path.append('../../')
+
 from Denoising.config import BaseConfig
 import torch
 import numpy as np

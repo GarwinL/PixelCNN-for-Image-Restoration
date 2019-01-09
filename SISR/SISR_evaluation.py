@@ -4,10 +4,13 @@ Created on Fri Jul 27 15:43:48 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
 
 import torch
 from Dataloader.dataloader import get_loader_denoising
-from SISR.SR import SISR
+from SISR.sr import SISR
 from PixelCNNpp.network import PixelCNN
 from scipy.misc import imresize
 import numpy as np

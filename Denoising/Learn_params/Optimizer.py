@@ -5,6 +5,10 @@ Created on Thu Aug 23 12:16:34 2018
 @author: garwi
 """
 
+import sys
+# Add sys path
+sys.path.append('../../')
+
 import torch
 from Dataloader.dataloader import get_loader_cifar, get_loader_bsds, get_loader_denoising
 import numpy as np

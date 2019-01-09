@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import sys
+# Add sys path
+sys.path.append('../../')
 
 import torch
 import numpy as np
@@ -6,7 +9,7 @@ from Dataloader.dataloader import get_loader_cifar, get_loader_bsds, get_loader_
 from PixelCNNpp.network import PixelCNN
 from Denoising.config import BaseConfig
 from Denoising.utils import PSNR, img_rot90, c_ssim, add_noise
-from Denoising.Learn_params.Optimizer import optimizeMAP
+from Denoising.Learn_params.optimizer import optimizeMAP
 from scipy.interpolate import interp1d
 from scipy.interpolate import InterpolatedUnivariateSpline
 

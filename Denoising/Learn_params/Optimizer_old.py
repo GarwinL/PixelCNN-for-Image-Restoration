@@ -4,6 +4,10 @@ Created on Fri Jul 27 15:43:48 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../../')
+
 import torch
 import numpy as np
 import matplotlib.pyplot as plt

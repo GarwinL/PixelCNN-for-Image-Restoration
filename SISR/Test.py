@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import sys
+# Add sys path
+sys.path.append('../')
 
 import torch
 from SISR.utils import rescaling, psnr

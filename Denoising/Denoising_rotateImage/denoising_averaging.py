@@ -5,6 +5,11 @@ Created on Wed Sep 12 13:24:18 2018
 @author: garwi
 """
 
+import sys
+# Add sys path
+sys.path.append('../../')
+
+
 from torchvision.utils import make_grid
 from Denoising.Denoising_rotateImage.posterior_averaging import logposterior # _withTV
 import torch

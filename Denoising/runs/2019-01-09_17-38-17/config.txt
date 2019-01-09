@@ -1,0 +1,15 @@
+-------- Configurations ----------
+alpha: 0.6
+continuous_logistic: True
+control_epochs: 5
+crop_size: 180
+directory: runs\2019-01-09_17-38-17
+linesearch: False
+lr: 0.01
+lr_decay: 1
+n_epochs: 10
+net_name: net_epoch_3000_2resnet_80filter.pt
+optimizer: <class 'torch.optim.adam.Adam'>
+parser: ArgumentParser(prog='optimizer.py', usage=None, description=None, formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+sigma: 50.0
+-------- End -------

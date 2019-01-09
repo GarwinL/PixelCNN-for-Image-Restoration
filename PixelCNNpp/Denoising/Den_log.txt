@@ -1,4 +1,0 @@
-PSNR_each:  27.957037
-PSNR_best: 27.957037
-SSIM_each:  0.770981
-PSNR_avg:  27.957037

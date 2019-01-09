@@ -5,6 +5,10 @@ Created on Wed Aug  1 14:58:38 2018
 @author: garwi
 """
 
+import sys
+# Add sys path
+sys.path.append('../')
+
 from PixelCNNpp.config import BaseConfig as Config
 from Dataloader.dataloader import get_loader_cifar, get_loader_bsds
 from PixelCNNpp.trainer import Trainer

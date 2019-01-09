@@ -4,6 +4,10 @@ Created on Fri Jul 27 15:43:48 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
+
 import torch
 from Dataloader.dataloader import get_loader_mask, get_loader_bsds, get_loader_denoising
 from PixelCNNpp.network import PixelCNN

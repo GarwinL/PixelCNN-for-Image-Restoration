@@ -4,11 +4,15 @@ Created on Thu Aug 23 15:32:12 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
+
 import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import numpy as np
-from network import PixelCNN
+from PixelCNNpp.network import PixelCNN
 
 # Calculate net size
 def modelsize(net, input_size):

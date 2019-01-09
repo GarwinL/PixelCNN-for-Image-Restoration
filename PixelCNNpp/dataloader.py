@@ -4,6 +4,9 @@ Created on Wed Aug  1 15:03:31 2018
 
 @author: garwi
 """
+import sys
+# Add sys path
+sys.path.append('../')
 
 from torchvision import datasets, transforms
 from torch.utils import data

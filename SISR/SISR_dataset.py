@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+import sys
+# Add sys path
+sys.path.append('../')
 
 from Inpainting.utils import PSNR, add_noise, c_ssim, add_inpainting
 from Dataloader.dataloader import get_loader_mask, get_loader_bsds, get_loader_denoising

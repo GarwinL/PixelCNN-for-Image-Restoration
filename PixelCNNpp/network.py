@@ -5,6 +5,10 @@ Created on Wed Aug  1 14:51:50 2018
 @author: garwi
 """
 
+import sys
+# Add sys path
+sys.path.append('../')
+
 import pdb
 import torch 
 import torch.nn as nn
