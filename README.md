@@ -1,5 +1,5 @@
 # PixelCNN for Image Restoration
-A pytorch implementation for the application of PixelCNN++ to Image Restoration (Denoising, inpainting, SISR)
+A pytorch implementation for the application of PixelCNN++ to Image Restoration (Denoising, Inpainting, SISR)
 
 ## Setup
 To run the code you need the following:
